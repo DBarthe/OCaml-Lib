@@ -68,7 +68,7 @@
 #
 # The Caml sources (including camlyacc and camllex source files)
 
-SOURCES = option.ml binomialHeap.ml
+SOURCES = option.ml binomialHeap.ml priorityQueue.ml
 # The executable file to generate (default a.out under Unix)
 
 EXEC = lib.cma
@@ -78,6 +78,7 @@ EXEC = lib.cma
 #
 # The Caml compilers.
 # You may fix here the path to access the Caml compiler on your machine
+CAMLVM = ocaml
 CAMLC = ocamlc
 CAMLOPT = ocamlopt
 CAMLDEP = ocamldep
@@ -119,7 +120,12 @@ DOCCHARSET = utf-8
 DOCDIR = Doc
 DOCSOURCES = $(wildcard *.mli)
 
+################ Test variables ######################
+TESTSOURCES = test.ml
+
 ################ End of user's variables #####################
+
+
 
 
 ##############################################################
@@ -199,6 +205,9 @@ clean:
 
 depend: $(SOURCES2)
 	$(CAMLDEP) *.mli *.ml > .depend
+
+test: $(EXEC)
+	$(CAMLVM) $(EXEC) $(TESTSOURCES)
 
 doc: $(OBJS)
 	$(CAMLDOC) -$(DOCFORMAT) -charset $(DOCCHARSET) -d $(DOCDIR) $(DOCSOURCES)
