@@ -97,8 +97,11 @@ let find_min h =
 (** Remove the min element from the heap *)
 let delete_min h =
   let min_key = find_min h in
-  let min_tree = List.find (fun t -> t.key = min_key) h.trees
-  and trees = List.filter (fun t -> t.key != min_key) h.trees in
-  let h = { trees = trees; compare = h.compare }
+  let rec extract_min accu = function
+  | x::xs when h.compare x.key min_key = 0 -> (x, List.rev_append accu xs)
+  | x::xs -> extract_min (x :: accu) xs
+  | [] -> assert false in
+  let (min_tree, others_trees) = extract_min [] h.trees in
+  let h = { trees = others_trees; compare = h.compare }
   and h' = { trees = List.rev min_tree.children; compare = h.compare } in
   merge h h'
