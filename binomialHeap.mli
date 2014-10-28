@@ -37,10 +37,12 @@ val insert : 'a -> 'a t -> 'a t
 
 (**
   [find_min h] returns the minimum element of the heap [h].  
+  @raise Failure if the heap is empty
 *)
 val find_min : 'a t -> 'a
 
 (**
   [delete_min h] returns a heap in which the minimum element has been deleted.
+  @raise Failure if the heap is empty
 *)
 val delete_min : 'a t -> 'a t 
