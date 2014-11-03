@@ -71,7 +71,7 @@
 SOURCES = option.ml binomialHeap.ml priorityQueue.ml
 # The executable file to generate (default a.out under Unix)
 
-EXEC = lib.cma
+EXEC = libmy.cma
 
 
 ########################## Advanced user's variables #####################
