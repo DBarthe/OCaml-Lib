@@ -20,7 +20,7 @@ type 'a t = {
 
 (** create a new binomial tree of the order 0 and the given [key] *)
 let create_tree key =
-  { key = key; order = 0; children = [] }
+  { key; order = 0; children = [] }
 
 (** merge two binomial trees of the same order *)
 let merge_trees compare_fun t1 t2 =
@@ -31,7 +31,7 @@ let merge_trees compare_fun t1 t2 =
       (t1.key, t2 :: t1.children)
     else
       (t2.key, t1 :: t2.children) in
-  { key = key; order = order; children = children }
+  { key; order; children }
 
 (** create a new binomial heap with one element [elt] *)
 let create compare_fun elt =
@@ -80,7 +80,7 @@ let merge h1 h2 =
     | Option.None -> with_none () in
 
   let trees = merge_trees_list [] h1.trees h2.trees Option.None in 
-  { trees = trees; compare = compare_fun }
+  { trees; compare = compare_fun }
 
 (** insert an element [elt] in the binomial heap [h] *)
 let insert elt h =
