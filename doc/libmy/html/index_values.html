@@ -8,13 +8,25 @@
 <link title="Index of modules" rel=Appendix href="index_modules.html">
 <link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
 <link title="Option" rel="Chapter" href="Option.html">
-<link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html"><title>Index of values</title>
+<link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html">
+<link title="Utils" rel="Chapter" href="Utils.html"><title>Index of values</title>
 </head>
 <body>
 <div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
 &nbsp;</div>
 <h1>Index of values</h1>
 <table>
+<tr><td align="left"><br></td></tr>
+<tr><td><a href="Utils.html#VAL(--)">(--)</a> [<a href="Utils.html">Utils</a>]</td>
+<td><div class="info">
+<code class="code">a -- b</code> is equivalent to range with <code class="code">~step:1</code>
+</div>
+</td></tr>
+<tr><td><a href="Utils.html#VAL(-|)">(-|)</a> [<a href="Utils.html">Utils</a>]</td>
+<td><div class="info">
+<code class="code">f -| g</code> returns the composition f (g x)
+</div>
+</td></tr>
 <tr><td align="left"><br>C</td></tr>
 <tr><td><a href="PriorityQueue.html#VALcreate">create</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
 <td><div class="info">
@@ -126,6 +138,19 @@ This function returns true if the heap is empty.
 <tr><td><a href="PriorityQueue.html#VALpush">push</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
 <td><div class="info">
 <code class="code">push q elt</code> adds the element <code class="code">elt</code> to <code class="code">q</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="Utils.html#VALrange">range</a> [<a href="Utils.html">Utils</a>]</td>
+<td><div class="info">
+<code class="code">range ?step start stop</code> returns a list containing an arithmetic
+    progression of integer between <code class="code">start</code> and <code class="code">stop</code> with an increment
+    of size <code class="code">step</code>.
+</div>
+</td></tr>
+<tr><td><a href="Utils.html#VALrev_range">rev_range</a> [<a href="Utils.html">Utils</a>]</td>
+<td><div class="info">
+<code class="code">rev_range ?step start stop</code> is like range but is descendant
 </div>
 </td></tr>
 <tr><td align="left"><br>T</td></tr>

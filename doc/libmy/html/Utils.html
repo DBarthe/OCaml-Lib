@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="PriorityQueue.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
+<link title="Option" rel="Chapter" href="Option.html">
+<link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html">
+<link title="Utils" rel="Chapter" href="Utils.html"><title>Utils</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="PriorityQueue.html" title="PriorityQueue">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Utils.html">Utils</a></h1>
+
+<pre><span class="keyword">module</span> Utils: <code class="code">sig</code> <a href="Utils.html">..</a> <code class="code">end</code></pre><div class="info module top">
+Basic functions that ocaml should aready have (I think).<br>
+<b>Author(s):</b> Barthelemy Delemotte<br>
+</div>
+<hr width="100%">
+
+<pre><span id="VALrange"><span class="keyword">val</span> range</span> : <code class="type">?step:int -> int -> int -> int list</code></pre><div class="info ">
+<code class="code">range ?step start stop</code> returns a list containing an arithmetic
+    progression of integer between <code class="code">start</code> and <code class="code">stop</code> with an increment
+    of size <code class="code">step</code>.<br>
+</div>
+
+<pre><span id="VALrev_range"><span class="keyword">val</span> rev_range</span> : <code class="type">?step:int -> int -> int -> int list</code></pre><div class="info ">
+<code class="code">rev_range ?step start stop</code> is like range but is descendant<br>
+</div>
+
+<pre><span id="VAL(--)"><span class="keyword">val</span> (--)</span> : <code class="type">int -> int -> int list</code></pre><div class="info ">
+<code class="code">a -- b</code> is equivalent to range with <code class="code">~step:1</code><br>
+</div>
+
+<pre><span id="VAL(-|)"><span class="keyword">val</span> (-|)</span> : <code class="type">('a -> 'b) -> ('c -> 'a) -> 'c -> 'b</code></pre><div class="info ">
+<code class="code">f -| g</code> returns the composition f (g x)<br>
+</div>
+</body></html>
