@@ -1,0 +1,163 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
+<link title="Option" rel="Chapter" href="Option.html">
+<link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="PriorityQueue.html#VALcreate">create</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">create compare_fun</code> returns a new empty priority queue.
+</div>
+</td></tr>
+<tr><td><a href="BinomialHeap.html#VALcreate">create</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">create compare_fun elt</code> returns a new heap of one element <code class="code">elt</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="BinomialHeap.html#VALdelete_min">delete_min</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">delete_min h</code> returns a heap in which the minimum element has been deleted.
+</div>
+</td></tr>
+<tr><td align="left"><br>E</td></tr>
+<tr><td><a href="BinomialHeap.html#VALempty">empty</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">empty compare_fun</code> returns a new empty heap.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALexpect">expect</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">expect option msg</code> returns the value contained in <code class="code">option</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>F</td></tr>
+<tr><td><a href="BinomialHeap.html#VALfind_min">find_min</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">find_min h</code> returns the minimum element of the heap <code class="code">h</code>.
+</div>
+</td></tr>
+<tr><td><a href="PriorityQueue.html#VALfrom_list">from_list</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">from_list compare_fun l</code> creates a new priority queue with elements of <code class="code">l</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>I</td></tr>
+<tr><td><a href="BinomialHeap.html#VALinsert">insert</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">insert elt h</code> inserts an element <code class="code">elt</code> in the heap <code class="code">h</code>, and returns the new heap.
+</div>
+</td></tr>
+<tr><td><a href="PriorityQueue.html#VALis_empty">is_empty</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">is_empty q</code> returns true if <code class="code">q</code> is empty.
+</div>
+</td></tr>
+<tr><td><a href="BinomialHeap.html#VALis_empty">is_empty</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+This function returns true if the heap is empty.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALis_none">is_none</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">is_none option</code> returns true if the <code class="code">option</code> is a <code class="code">None</code> value.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALis_some">is_some</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">is_some option</code> returns true if the <code class="code">option</code> is a <code class="code">Some</code> value.
+</div>
+</td></tr>
+<tr><td align="left"><br>L</td></tr>
+<tr><td><a href="PriorityQueue.html#VALlength">length</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">length q</code> returns the number of elements in <code class="code">q</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>M</td></tr>
+<tr><td><a href="Option.html#VALmap">map</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">map option f</code> maps an <code class="code">option</code> of type 'a to an option of type 'b by applying the
+    function <code class="code">f</code> to the contained value.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALmap_or">map_or</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">map_or option def f</code> maps an <code class="code">option</code> of type 'a to a value of type 'b
+    by applying the function <code class="code">f</code> if <code class="code">option</code> is a <code class="code">Some</code> value, or taking
+    the value <code class="code">def</code> otherwise.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALmap_or_else">map_or_else</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">map_or_else option def_fun map_fun</code> is like <code class="code">map_or</code> but with the default
+    value given by calling the closure function <code class="code">def_fun</code> instead of the value
+    directly.
+</div>
+</td></tr>
+<tr><td><a href="PriorityQueue.html#VALmerge">merge</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">merge q1 q2</code> creates a new priority queue by merging <code class="code">q1</code> and <code class="code">q2</code>.
+</div>
+</td></tr>
+<tr><td><a href="BinomialHeap.html#VALmerge">merge</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
+<td><div class="info">
+<code class="code">merge h1 h2</code> returns a new heap obtained by merging two heap <code class="code">h1</code> and <code class="code">h2</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="PriorityQueue.html#VALpop">pop</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">pop q</code> removes the minimum element of <code class="code">q</code>.
+</div>
+</td></tr>
+<tr><td><a href="PriorityQueue.html#VALpush">push</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">push q elt</code> adds the element <code class="code">elt</code> to <code class="code">q</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>T</td></tr>
+<tr><td><a href="PriorityQueue.html#VALto_list">to_list</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">to_list q</code> returns a sorted list composed by elements of <code class="code">q</code>.
+</div>
+</td></tr>
+<tr><td><a href="PriorityQueue.html#VALtop">top</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
+<td><div class="info">
+<code class="code">top q</code> returns the minimum element contained in <code class="code">q</code> according to the
+    comparison function <code class="code">compare_fun</code> (given during construction).
+</div>
+</td></tr>
+<tr><td align="left"><br>U</td></tr>
+<tr><td><a href="Option.html#VALunwrap">unwrap</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">unwrap option</code> returns the value contained in <code class="code">option</code>.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALunwrap_or">unwrap_or</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">unwrap_of option def</code> returns the value contained in <code class="code">option</code> or <code class="code">def</code> 
+    if <code class="code">option</code> is <code class="code">None</code>.
+</div>
+</td></tr>
+<tr><td><a href="Option.html#VALunwrap_or_else">unwrap_or_else</a> [<a href="Option.html">Option</a>]</td>
+<td><div class="info">
+<code class="code">unwrap_or_else option f</code> is like <code class="code">unwrap_or</code> but with the default value
+    given by calling the closure function <code class="code">f</code>.
+</div>
+</td></tr>
+</table>
+</body>
+</html>
