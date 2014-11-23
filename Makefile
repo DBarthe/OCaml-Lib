@@ -1,7 +1,7 @@
 OCAMLMAKEFILE = OCamlMakefile
 
 SOURCES_DIR = src
-MODULES = option utils binomialHeap priorityQueue
+MODULES = option listExt utils binomialHeap priorityQueue
 SOURCES = $(foreach m,$(MODULES),$(SOURCES_DIR)/$(m).ml)
 
 RESULT = libmy
