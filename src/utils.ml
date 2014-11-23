@@ -13,7 +13,7 @@ let range ?(step=1) start stop =
   aux [] start
 
 (* infix version of range *)
-let (--) = range ~step:1
+let ( -- ) = range ~step:1
 
 (* reversed range *)
 let rev_range ?(step=1) start stop =
@@ -24,4 +24,7 @@ let rev_range ?(step=1) start stop =
   aux [] start
 
 (* function composition *)
-let (-|) f g = fun x -> f (g x)
+let ( -| ) f g = fun x -> f (g x)
+
+(* function application *)
+let ( ^$ ) f x = f x
