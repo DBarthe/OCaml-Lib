@@ -16,7 +16,7 @@ all: native-code-library byte-code-library
 test: byte-code-library
 	ocamlc -I src/ $(RESULT).cma -o test $(SOURCES_DIR)/test.ml 
 clean-test:
-	$(RM) test
+	$(RM) test src/test.cmo src/test.cmi
 
 
 include $(OCAMLMAKEFILE)

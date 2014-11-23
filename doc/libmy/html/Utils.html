@@ -10,6 +10,7 @@
 <link title="Index of values" rel=Appendix href="index_values.html">
 <link title="Index of modules" rel=Appendix href="index_modules.html">
 <link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
+<link title="ListExt" rel="Chapter" href="ListExt.html">
 <link title="Option" rel="Chapter" href="Option.html">
 <link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html">
 <link title="Utils" rel="Chapter" href="Utils.html"><title>Utils</title>
@@ -42,5 +43,9 @@ Basic functions that ocaml should aready have (I think).<br>
 
 <pre><span id="VAL(-|)"><span class="keyword">val</span> (-|)</span> : <code class="type">('a -> 'b) -> ('c -> 'a) -> 'c -> 'b</code></pre><div class="info ">
 <code class="code">f -| g</code> returns the composition f (g x)<br>
+</div>
+
+<pre><span id="VAL(^$)"><span class="keyword">val</span> (^$)</span> : <code class="type">('a -> 'b) -> 'a -> 'b</code></pre><div class="info ">
+<code class="code">f -| x</code> returns <code class="code">f x</code>. It's the infix fashion for application.<br>
 </div>
 </body></html>

@@ -7,6 +7,7 @@
 <link title="Index of values" rel=Appendix href="index_values.html">
 <link title="Index of modules" rel=Appendix href="index_modules.html">
 <link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
+<link title="ListExt" rel="Chapter" href="ListExt.html">
 <link title="Option" rel="Chapter" href="Option.html">
 <link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html">
 <link title="Utils" rel="Chapter" href="Utils.html"><title>Index of values</title>
@@ -27,6 +28,11 @@
 <code class="code">f -| g</code> returns the composition f (g x)
 </div>
 </td></tr>
+<tr><td><a href="Utils.html#VAL(^$)">(^$)</a> [<a href="Utils.html">Utils</a>]</td>
+<td><div class="info">
+<code class="code">f -| x</code> returns <code class="code">f x</code>.
+</div>
+</td></tr>
 <tr><td align="left"><br>C</td></tr>
 <tr><td><a href="PriorityQueue.html#VALcreate">create</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
 <td><div class="info">
@@ -42,6 +48,17 @@
 <tr><td><a href="BinomialHeap.html#VALdelete_min">delete_min</a> [<a href="BinomialHeap.html">BinomialHeap</a>]</td>
 <td><div class="info">
 <code class="code">delete_min h</code> returns a heap in which the minimum element has been deleted.
+</div>
+</td></tr>
+<tr><td><a href="ListExt.html#VALdrop">drop</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">drop n l</code> dicards <code class="code">n</code> leading elements (if possible) of <code class="code">l</code>.
+</div>
+</td></tr>
+<tr><td><a href="ListExt.html#VALdrop_while">drop_while</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">drop_while f l</code> discards leading elements of <code class="code">l</code> until the
+    predicate <code class="code">f</code> is not satisfyed.
 </div>
 </td></tr>
 <tr><td align="left"><br>E</td></tr>
@@ -154,6 +171,17 @@ This function returns true if the heap is empty.
 </div>
 </td></tr>
 <tr><td align="left"><br>T</td></tr>
+<tr><td><a href="ListExt.html#VALtake">take</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">take n l</code> returns the prefix of <code class="code">l</code> of length <code class="code">n</code> max.
+</div>
+</td></tr>
+<tr><td><a href="ListExt.html#VALtake_while">take_while</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">take_while f l</code> returns the longest prefix of <code class="code">l</code> with
+    all element satisfying the predicate <code class="code">f</code>.
+</div>
+</td></tr>
 <tr><td><a href="PriorityQueue.html#VALto_list">to_list</a> [<a href="PriorityQueue.html">PriorityQueue</a>]</td>
 <td><div class="info">
 <code class="code">to_list q</code> returns a sorted list composed by elements of <code class="code">q</code>.
@@ -181,6 +209,12 @@ This function returns true if the heap is empty.
 <td><div class="info">
 <code class="code">unwrap_or_else option f</code> is like <code class="code">unwrap_or</code> but with the default value
     given by calling the closure function <code class="code">f</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>Z</td></tr>
+<tr><td><a href="ListExt.html#VALzip">zip</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">zip l1 l2</code> takes two lists and returns a list of corresponding pairs.
 </div>
 </td></tr>
 </table>

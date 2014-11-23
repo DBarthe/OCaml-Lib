@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="BinomialHeap.html">
+<link rel="next" href="Option.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="BinomialHeap" rel="Chapter" href="BinomialHeap.html">
+<link title="ListExt" rel="Chapter" href="ListExt.html">
+<link title="Option" rel="Chapter" href="Option.html">
+<link title="PriorityQueue" rel="Chapter" href="PriorityQueue.html">
+<link title="Utils" rel="Chapter" href="Utils.html"><title>ListExt</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="BinomialHeap.html" title="BinomialHeap">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Option.html" title="Option">Next</a>
+</div>
+<h1>Module <a href="type_ListExt.html">ListExt</a></h1>
+
+<pre><span class="keyword">module</span> ListExt: <code class="code">sig</code> <a href="ListExt.html">..</a> <code class="code">end</code></pre><div class="info module top">
+List extension.<br>
+<b>Author(s):</b> barthelemy delemotte<br>
+</div>
+<hr width="100%">
+
+<pre><span id="VALzip"><span class="keyword">val</span> zip</span> : <code class="type">'a list -> 'b list -> ('a * 'b) list</code></pre><div class="info ">
+<code class="code">zip l1 l2</code> takes two lists and returns a list of corresponding pairs.
+    If one input is short, excess elements are discarded.<br>
+</div>
+
+<pre><span id="VALtake"><span class="keyword">val</span> take</span> : <code class="type">int -> 'a list -> 'a list</code></pre><div class="info ">
+<code class="code">take n l</code> returns the prefix of <code class="code">l</code> of length <code class="code">n</code> max.<br>
+</div>
+
+<pre><span id="VALtake_while"><span class="keyword">val</span> take_while</span> : <code class="type">('a -> bool) -> 'a list -> 'a list</code></pre><div class="info ">
+<code class="code">take_while f l</code> returns the longest prefix of <code class="code">l</code> with
+    all element satisfying the predicate <code class="code">f</code>.<br>
+</div>
+
+<pre><span id="VALdrop"><span class="keyword">val</span> drop</span> : <code class="type">int -> 'a list -> 'a list</code></pre><div class="info ">
+<code class="code">drop n l</code> dicards <code class="code">n</code> leading elements (if possible) of <code class="code">l</code>.<br>
+</div>
+
+<pre><span id="VALdrop_while"><span class="keyword">val</span> drop_while</span> : <code class="type">('a -> bool) -> 'a list -> 'a list</code></pre><div class="info ">
+<code class="code">drop_while f l</code> discards leading elements of <code class="code">l</code> until the
+    predicate <code class="code">f</code> is not satisfyed.<br>
+</div>
+</body></html>
