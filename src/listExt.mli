@@ -25,3 +25,7 @@ val drop_while : ('a -> bool) -> 'a list -> 'a list
 (** [init length f] returns a list of [length] elements initialized with the
     function [f], called with the element's index as parameter. *)
 val init : int -> (int -> 'a) -> 'a list
+
+(** [flatten_opti] does the same job than
+    [List.flatten] except it's tail-recursive. *)
+val flatten_opti : 'a list list -> 'a list

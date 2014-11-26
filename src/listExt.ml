@@ -35,3 +35,9 @@ let init length f =
     if i = length then List.rev accu else
     aux (f i ::accu) (i+1) in
   aux [] 0
+
+let flatten_opti l = 
+  let rec aux accu = function
+  | [] -> List.rev accu
+  | xs::xss -> aux (List.rev_append xs accu) xss
+  in aux [] l 

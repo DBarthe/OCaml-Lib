@@ -56,4 +56,9 @@ List extension.<br>
 <code class="code">init length f</code> returns a list of <code class="code">length</code> elements initialized with the
     function <code class="code">f</code>, called with the element's index as parameter.<br>
 </div>
+
+<pre><span id="VALflatten_opti"><span class="keyword">val</span> flatten_opti</span> : <code class="type">'a list list -> 'a list</code></pre><div class="info ">
+<code class="code">flatten_opti</code> does the same job than
+    <code class="code">List.flatten</code> except it's tail-recursive.<br>
+</div>
 </body></html>
