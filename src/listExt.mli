@@ -21,3 +21,7 @@ val drop : int -> 'a list -> 'a list
 (** [drop_while f l] discards leading elements of [l] until the
     predicate [f] is not satisfyed. *)
 val drop_while : ('a -> bool) -> 'a list -> 'a list
+
+(** [init length f] returns a list of [length] elements initialized with the
+    function [f], called with the element's index as parameter. *)
+val init : int -> (int -> 'a) -> 'a list

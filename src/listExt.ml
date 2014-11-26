@@ -30,3 +30,8 @@ let rec drop_while f = function
 | x::xs when f x -> drop_while f xs
 | xs -> xs
 
+let init length f = 
+  let rec aux accu i =
+    if i = length then List.rev accu else
+    aux (f i ::accu) (i+1) in
+  aux [] 0
