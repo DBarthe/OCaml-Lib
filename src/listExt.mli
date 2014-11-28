@@ -26,6 +26,10 @@ val drop_while : ('a -> bool) -> 'a list -> 'a list
     function [f], called with the element's index as parameter. *)
 val init : int -> (int -> 'a) -> 'a list
 
-(** [flatten_opti] does the same job than
+(** [flatten_opti l] does the same job than
     [List.flatten] except it's tail-recursive. *)
 val flatten_opti : 'a list list -> 'a list
+
+(** [map_opti f l] does the same than [List.map] but is tail
+    recursive. *)
+val map_opti : ('a -> 'b) -> 'a list -> 'b list

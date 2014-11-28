@@ -80,7 +80,7 @@
 </td></tr>
 <tr><td><a href="ListExt.html#VALflatten_opti">flatten_opti</a> [<a href="ListExt.html">ListExt</a>]</td>
 <td><div class="info">
-<code class="code">flatten_opti</code> does the same job than
+<code class="code">flatten_opti l</code> does the same job than
     <code class="code">List.flatten</code> except it's tail-recursive.
 </div>
 </td></tr>
@@ -132,6 +132,12 @@ This function returns true if the heap is empty.
 <td><div class="info">
 <code class="code">map option f</code> maps an <code class="code">option</code> of type 'a to an option of type 'b by applying the
     function <code class="code">f</code> to the contained value.
+</div>
+</td></tr>
+<tr><td><a href="ListExt.html#VALmap_opti">map_opti</a> [<a href="ListExt.html">ListExt</a>]</td>
+<td><div class="info">
+<code class="code">map_opti f l</code> does the same than <code class="code">List.map</code> but is tail
+    recursive.
 </div>
 </td></tr>
 <tr><td><a href="Option.html#VALmap_or">map_or</a> [<a href="Option.html">Option</a>]</td>

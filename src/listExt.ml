@@ -41,3 +41,6 @@ let flatten_opti l =
   | [] -> List.rev accu
   | xs::xss -> aux (List.rev_append xs accu) xss
   in aux [] l 
+
+let map_opti f l =
+  l |> List.rev_map f |> List.rev
